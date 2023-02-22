@@ -4,6 +4,9 @@
   <title>MY PLANTS WEB PAGE</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+
   
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -13,6 +16,24 @@
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="plants.html">Interesting Plants</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="basic.html">Basic html</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="advanced.html">Advanced html</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <h1>PLANTS BY VENGALA SAI KIRAN</h1>
   <div class="container">
    <div class="row">
@@ -35,6 +56,113 @@
 
   <p>The plant names row breaks first.The only reason for this is that in Bootstrap we design the grid with 12 colomns in mind.In Each element can have up to twelve columns and the total number of columns that the elements in a row can have is twelve or less.if the width is too small enough,the row will start to stack the elements vertically.</p>
   
+  <br>
+  <div class="container">
+    <img src="Valerian.jpg" width="350" height="350" class="img-fluid">
+    <img src="EasterCactus.jpg" width="350" height="350" class="img-fluid">
+    <img src="NapaCabbage.jpeg" width="350" height="350" class="img-fluid">
+  </div>
+  <div class="container">
+    <img src="Valerian.jpg" width="350" height="350" class="img-thumbnail">
+    <img src="EasterCactus.jpg" width="350" height="350" class="img-thumbnail">
+    <img src="NapaCabbage.jpeg" width="350" height="350" class="img-thumbnail">
+  </div>
+  <table class="table table-stripe table-hover table-bordered caption-top caption-top">
+    <caption>Plants, mountains, and Lakes that starts with the following letter written in the table.</caption>
+    <thead  class="table-dark">
+      <tr>
+        <th scope="col">Letter</th>
+        <th scope="col">Plant</th>
+        <th scope="col">Mountain</th>
+        <th scope="col">Lake</th>
+      </tr>
+    </thead>
+
+    <tbody class="table-group-divider">
+      <tr>
+        <th class="table-secondary">V</th>
+        <td class="table-secondary">Valerian</td>
+        <td class="table-secondary">Varevasht</td>
+        <td class="table-secondary">Valencia</td>
+      </tr>
+      <tr>
+      <th class="table-primary">E</th>
+      <td class="table-primary">Easter cactus</td>
+      <td class="table-primary">Eagle Mountain</td>
+      <td class="table-primary">Ebinur</td>
+      </tr>
+      <tr>
+        <th class="table-danger">N</th>
+        <td class="table-danger">Nape cabbage</td>
+        <td class="table-danger">Navarro Mills</td>
+        <td class="table-danger">Nagase</td>
+      </tr>
+      <tr>
+      <th class="table-warning">G</th>
+      <td class="table-warning">Gardenia</td>
+      <td class="table-warning">Gibbons Creek</td>
+      <td class="table-warning">Gairdner</td>
+      </tr>
+      <tr>
+        <th class="table-info">A</th>
+        <td class="table-info">Abelia</td>
+        <td class="table-info">Alan Henry</td>
+        <td class="table-info">Abaya</td>
+      </tr>
+      <tr>
+      <th class="table-success">L</th>
+      <td class="table-success">Lady palm</td>
+      <td class="table-success">Lavon</td>
+      <td class="table-success">La Plata</td>
+      </tr>
+    </tbody>
+    </thead>
+  </table>
+  <div class="btn-toolbar">
+    <div class="btn-group"  aria-label="Basic example">
+      <button type="button" class="btn btn-success">V</button>
+      <button type="button" class="btn btn-success">E</button>
+      <button type="button" class="btn btn-success">N</button>
+    </div>
+
+    <div class="btn-group" aria-label="Basic example">
+      
+      <button type="button" class="btn btn-warning">G</button>
+      <button type="button" class="btn btn-warning">A</button>
+    </div>
+
+    <div class="btn-group" aria-label="Basic example">
+      
+      <button type="button" class="btn btn-danger">L</button>
+    </div>
+  </div>
+  <br>
+  <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+      Dropdown button
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="basic.html">Basic html</a></li>
+      <li><a class="dropdown-item" href="advanced.html">Advanced html</a></li>
+    </ul>
+  </div>
+  <br>
+  <form>
+    <div class="form-group">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Plant</label>
+        <input type="text" class="form-control" placeholder="Enter your plant">
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">Sign up for newsletter?</label>
+        <input type="checkbox" class="form-check-input">
+      </div>
+      <button class="btn btn-primary" type="submit">Submit</button>
+</form>
 
 
 
